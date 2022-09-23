@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        //- link(rel="stylesheet", href="styles/normilize.css")
+        link(rel="stylesheet", href="styles/myReset.css")
+        link(rel="stylesheet", href="styles/style.css")
+    body
+        include modules/header
+        
+        section.description
+            img(src="images/bg-photo.jpg", alt="bg-photo").description__bg-image
+            .container
+                .description-inner
+                    h1.description__title
+                        span.description__title-number 10
+                        span.description__title-text ИДЕОЛОГИЧЕСКИХ ПРИНЦИПОВ БЫСТРОРАСТУЩЕЙ КОМПАНИИ
+                    h2.description__text Узнай, как #[span.description__text-bold повысить эффективность] компании за&nbsp;счет правильной идеологии в команде! 
+                    button.button-participate.description__button Принять участие
+
+        section.benefits
+            .container
+                .benefits-inner
+                    h2.block-title.benefits__title ты узнаешь
+                    ul.benefits__list
+                        li.benefits__item
+                            img(src="images/icon-user-star.svg", alt="").benefits__icon
+                            p.benefits__description Что притягивает #[span.benefits__description-bold "звезд"] в команду
+                        li.benefits__item
+                            img(src="images/icon-ideology.svg", alt="").benefits__icon
+                            p.benefits__description Как выстроить идеологию, где каждый будет работать со 100% отдачей
+                        li.benefits__item
+                            img(src="images/icon-command.svg", alt="").benefits__icon
+                            p.benefits__description Как сплотить команду в сложных условиях
+                        li.benefits__item
+                            img(src="images/icon-happy.svg", alt="").benefits__icon
+                            p.benefits__description Как создать атмосферу, при которой всем будет кайфово работать
+                        li.benefits__item
+                            img(src="images/icon-arrow.svg", alt="").benefits__icon
+                            p.benefits__description Как повысить эффективность компании, и как следствие, получить рост прибыли минимум в 2 раза
+                        li.benefits__item
+                            img(src="images/icon-network.svg", alt="").benefits__icon
+                            p.benefits__description Как организовать работу, где все четко понимают, чем они заняты
+
+        //- h2.block-title ты узнаешь
+        //- h2.block-title ОТЗЫВЫ СТУДЕНТОВ
+        //- button.button-participate Принять участие
+
+        //- include modules/footer
